@@ -1,0 +1,46 @@
+{
+  "name": "webcomp-ui-cli",
+  "version": "0.0.1",
+  "description": "CLI tool to install webcomp_ui components",
+  "main": "dist/cjs/lib.js",
+  "module": "dist/esm/lib.js",
+  "types": "dist/types/lib.d.ts",
+  "type": "module",
+  "browser": "dist/esm/lib.js",
+  "unpkg": "dist/esm/lib.js",
+  "exports": {
+    "import": "./dist/esm/lib.js",
+    "require": "./dist/cjs/lib.js",
+    "types": "./dist/types/lib.d.ts",
+    "default": "./dist/esm/lib.js"
+  },
+  "repository": {
+    "url": "https://github.com/marceloxhenrique/webcomp-ui-cli"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "scripts": {
+    "build:esm": "tsc --module ES6 --outDir dist/esm",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
+    "build": "npm run build:esm && npm run build:cjs",
+    "dev": "tsc --watch"
+  },
+  "bin": {
+    "webcomp-ui-cli": "dist/esm/index.js"
+  },
+  "keywords": [
+    "Web Components",
+    "UI",
+    "CLI"
+  ],
+  "author": "marceloxhenrique",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^24.0.12",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
