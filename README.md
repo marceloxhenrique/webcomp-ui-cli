@@ -1,7 +1,7 @@
 # WebComp UI CLI
 
 A lightweight CLI tool to install and manage Web Components from the [webcomp-ui library](https://github.com/marceloxhenrique/webcomp-ui).  
-It helps you add individual components to your project and set up framework-specific configurations,
+It helps you add individual components to your project and set up framework specific configurations,
 making it easy to integrate these components with popular frontend frameworks such as React, Angular, and Vue.
 
 ---
@@ -9,10 +9,10 @@ making it easy to integrate these components with popular frontend frameworks su
 ## Features
 
 - Add Web Components to your project in one command
-- Auto-configures framework-specific JSX/TSX types (for React TypeScript)
+- Auto configures framework specific JSX/TSX types (for React TypeScript)
 - Creates necessary folder structure and import scaffolding
 - Pulls components directly from the remote GitHub repository
-- Framework-aware setup and DX enhancements
+- Framework aware setup
 
 ---
 
@@ -60,7 +60,7 @@ npx webcomp-ui-cli add button
 
 - Downloads the `button` component from the GitHub repository
 - Adds it to `src/webcomp/button.ts`
-- Auto-imports it in `src/webcomp/ui.ts`
+- Auto imports it in `src/webcomp/ui.ts`
 - Injects React JSX type definitions (if applicable)
 
 ### 3. Import the component
@@ -141,4 +141,4 @@ https://github.com/marceloxhenrique/webcomp-ui/tree/main/src/components/
 
 ## License
 
-MIT License — built by [@marceloxhenrique](https://github.com/marceloxhenrique)
+MIT License built by [@marceloxhenrique](https://github.com/marceloxhenrique)
